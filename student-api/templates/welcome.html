@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/welcome.css') }}">
+	</head>
+
+	<body>
+		<h1>Student List Portal </h1>
+		<div>
+			<p>Welcome to our portal. This is a RESTful web API for student list <br>
+			where you can perform CRUD operations for student list. Each instance <br>
+			of student should have ID, their first and last name, date of birth <br>
+			and amount due. You can reach related sections with the buttons.</p>
+			<p id="credit"><b>This assigment is done by:</b> <br>
+			Ramon Vilarins <br>
+			Umutcan Asutlu</p>
+		</div>
+		<div>
+			<form action="/getstudent">
+				<input type="submit" id="button" value="Show Student" />
+			</form>
+			<form action="/allstudents">
+				<input type="submit" id="button" value="Show all Students" />
+			</form>
+			<form action="/newstudent">
+				<input type="submit" id="button" value="Create Student" />
+			</form>
+			<form action="/updatestudent">
+				<input type="submit" id="button" value="Update Student" />
+			</form>
+			<form action="/removestudent">
+				<input type="submit" id="button" value="Delete Student" />
+			</form>
+		</div>
+	</body>
+</html>
